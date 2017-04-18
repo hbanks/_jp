@@ -764,4 +764,46 @@ object {
   -ms-flex-align: center;
       align-items: center; }
 
+.home .wedding-party-container {
+  padding: 60px; }
+  .home .wedding-party-container .wedding-party-subheading {
+    text-align: center;
+    padding-bottom: 20px; }
+  .home .wedding-party-container .party-member {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 20px 0; }
+    .home .wedding-party-container .party-member:nth-child(2n) {
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
+  .home .wedding-party-container .party-member-img {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    height: 200px;
+    background-size: cover;
+    background-position: center center; }
+  .home .wedding-party-container .party-member-intro {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    padding: 0 35px; }
+    .home .wedding-party-container .party-member-intro .party-member-name {
+      padding-bottom: 15px;
+      color: #313c41; }
+  .home .wedding-party-container .the-ladies {
+    margin-bottom: 30px; }
+  .home .wedding-party-container .the-gents:before {
+    content: '';
+    width: 35%;
+    height: 1px;
+    background: #313c41;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.3; }
+  .home .wedding-party-container .the-gents .wedding-party-subheading {
+    padding-top: 50px; }
+
 /*# sourceMappingURL=../maps/style.css.map */

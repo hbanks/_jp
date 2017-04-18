@@ -15,7 +15,7 @@ get_header(); ?>
 	$headerImage = get_field('hero_image');
 	$ourStoryImage = get_field('our_story_image');
 	$weddingPartyImage = get_field('wedding_party_heading_image');
-
+	
 ?>
 
 <section id="home" class="hero-section" style="background-image: url('<?php echo $headerImage ?>')">
@@ -41,4 +41,64 @@ get_header(); ?>
 
 <section class="wedding-party-heading-container" style="background-image: url('<?php echo $weddingPartyImage ?>')">
 	<h2 class="wedding-party-heading"> <?php the_field('wedding_party_heading'); ?> </h2>
+</section>
+
+<section class="wedding-party-container">
+	<!-- start wedding party ladies -->
+	<?php if( have_rows('wedding_party_ladies') ): ?>
+		<div class="the-ladies">
+			<h3 class="wedding-party-subheading"><?php the_field('wedding_party_subheading_ladies') ?></h3>
+			<?php while( have_rows('wedding_party_ladies') ): the_row(); 
+
+				// vars
+				$partyMemberImage = get_sub_field('wedding_party_image');
+				$partyMemberName = get_sub_field('wedding_party_name');
+				$partyMemberIntro = get_sub_field('wedding_party_intro');
+
+			?>
+
+			<div class="party-member lady">
+  			<div class="party-member-img" style="background-image: url('<?php echo $partyMemberImage ?>')">
+				</div>
+				<div class="party-member-intro">
+					<h4 class="party-member-name"><?php echo $partyMemberName ?></h4>
+					<p class="party-member-desc">
+						<?php echo $partyMemberIntro ?>
+					</p>
+				</div>
+			</div>
+
+			<?php endwhile; ?>
+		</div>
+	<?php endif; ?>
+	<!-- end wedding party ladies -->
+
+	<!-- start wedding party gents -->
+	<?php if( have_rows('wedding_party_gents') ): ?>
+		<div class="the-gents">
+			<h3 class="wedding-party-subheading"><?php the_field('wedding_party_subheading_gents') ?></h3>
+			<?php while( have_rows('wedding_party_gents') ): the_row(); 
+
+				// vars
+				$partyMemberImage = get_sub_field('gentlemen_image');
+				$partyMemberName = get_sub_field('gentlemen_name');
+				$partyMemberIntro = get_sub_field('gentlemen_intro');
+
+			?>
+
+			<div class="party-member gent">
+  			<div class="party-member-img" style="background-image: url('<?php echo $partyMemberImage ?>')">
+				</div>
+				<div class="party-member-intro">
+					<h4 class="party-member-name"><?php echo $partyMemberName ?></h4>
+					<p class="party-member-desc">
+						<?php echo $partyMemberIntro ?>
+					</p>
+				</div>
+			</div>
+
+			<?php endwhile; ?>
+		</div>
+	<?php endif; ?>
+	<!-- end wedding party gents -->
 </section>
