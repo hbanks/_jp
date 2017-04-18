@@ -1,7 +1,22 @@
+.nav-name-container {
+	flex-basis: 50%;
+	.nav-names {
+		padding: 20px 25px;
+		font-size: 2em;
+	}
+	.nav-names a {
+		color: $text_accent;
+		font-size: 25px;
+		letter-spacing: 3px;
+		text-decoration: none;
+	}
+}
+
 .main-navigation {
-	clear: both;
-	display: block;
-	width: 100%;
+	// clear: both;
+	// display: block;
+	// width: 100%;
+	flex-basis: 50%;
 
 
 	ul {
@@ -55,12 +70,12 @@
 		position: relative;
 		padding: 10px 15px;
 
-		font-family: $sans-serif-font;
+		font-family: $sans_serif;
 	
 		a {
-			color: $text-light;
+			color: $text_accent;
 			font-size: 16px;
-			
+			letter-spacing: 3px;
 		}
 
 		&:hover > a,

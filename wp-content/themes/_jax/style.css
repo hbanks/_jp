@@ -205,10 +205,13 @@ h1, h2, h3, h4, h5, h6, ul, ol, li, div, a, p, span {
   margin: 0; }
 
 #masthead {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%; }
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -427,10 +430,21 @@ a {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+.nav-name-container {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
+  .nav-name-container .nav-names {
+    padding: 20px 25px;
+    font-size: 2em; }
+  .nav-name-container .nav-names a {
+    color: #313c41;
+    font-size: 25px;
+    letter-spacing: 3px;
+    text-decoration: none; }
+
 .main-navigation {
-  clear: both;
-  display: block;
-  width: 100%; }
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
   .main-navigation ul {
     display: -ms-flexbox;
     display: flex;
@@ -462,8 +476,9 @@ a {
     padding: 10px 15px;
     font-family: "Open Sans", sans-serif; }
     .main-navigation li a {
-      color: seashell;
-      font-size: 16px; }
+      color: #313c41;
+      font-size: 16px;
+      letter-spacing: 3px; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -703,24 +718,50 @@ object {
 /*--------------------------------------------------------------
 # Pages
 --------------------------------------------------------------*/
+.home .section-wrapper {
+  padding: 60px; }
+
+.home .section-heading {
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 30px; }
+
+.home .section-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
 .home .hero-section {
-  height: 100%;
+  height: calc(100% - 84px);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
 
-.home .text-overlay {
-  height: 100%;
+.home .our-story-img {
+  width: 450px;
+  height: 450px;
+  background-size: cover;
+  background-position: center top; }
+
+.home .our-story-img, .home .our-story-desc {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
+
+.home .our-story-desc {
+  padding: 0 0 0 40px;
+  font-family: "Libre Baskerville", serif;
+  font-size: 14px; }
+
+.home .wedding-party-heading-container {
+  padding: 100px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
-  background: rgba(255, 245, 238, 0.15); }
-
-.home .hero-text {
-  color: seashell;
-  letter-spacing: 5px; }
+  -ms-flex-align: center;
+      align-items: center; }
 
 /*# sourceMappingURL=../maps/style.css.map */

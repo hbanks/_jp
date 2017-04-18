@@ -1,22 +1,71 @@
 .home {
 
+	.section-wrapper {
+		padding: 60px;
+	}
+
+	.section-heading {
+		text-align: center;
+		padding-bottom: 40px;
+		font-size: 30px;
+	}
+
+	.section-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	//===================
+	// hero section
+	//===================
 	.hero-section {
-		height: 100%;
+		height: calc(100% - 84px);
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
 	}
 
-	.text-overlay {
-		height: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background: rgba(255,245,238, 0.15);
+	// .text-overlay {
+	// 	height: 100%;
+	// 	display: flex;
+	// 	align-items: center;
+	// 	justify-content: center;
+	// 	background: rgba(255,245,238, 0.15);
+	// }
+
+	// .hero-text {
+	// 	color: $text_light;
+	// 	letter-spacing: 5px;
+	// }
+
+	//===================
+	// our story section
+	//===================
+	.our-story-img {
+		width: 450px;
+		height: 450px;
+		background-size: cover;
+		background-position: center top;
 	}
 
-	.hero-text {
-		color: $text_light;
-		letter-spacing: 5px;
+	.our-story-img, .our-story-desc {
+		flex-basis: 50%;
+	}
+
+	.our-story-desc {
+		padding: 0 0 0 40px;
+		font-family: $serif;
+		font-size: $body_font;
+	}
+
+	//=======================
+	// wedding party section
+	//=======================
+	.wedding-party-heading-container {
+		padding: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }

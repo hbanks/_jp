@@ -25,10 +25,17 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', '_jax' ); ?></a>
 	
 		<header id="masthead" class="site-header" role="banner">
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', '_jax' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
+			<div class="nav-name-container">	
+				<h1 class="nav-names">
+					<a href="<?php echo home_url(); ?>"> <?php the_field('hero_text'); ?></a>
+				</h1>
+
+				<!-- <h2 class="hero-subtext"> <?php the_field('hero_subtext'); ?> </h2> -->
+			</div>
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', '_jax' ); ?></button>
+				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+			</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 	
 	<div id="content" class="site-content">
