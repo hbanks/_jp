@@ -213,6 +213,28 @@ h1, h2, h3, h4, h5, h6, ul, ol, li, div, a, p, span {
   -ms-flex-align: center;
       align-items: center; }
 
+.secondary-header {
+  padding: 250px;
+  background-size: cover;
+  background-position: center center; }
+
+.secondary-header-text {
+  color: seashell;
+  font-size: 46px;
+  text-align: center; }
+
+.section-header {
+  padding: 100px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.section-info {
+  padding: 60px; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -236,8 +258,16 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 60px; }
 
+.section-subheading {
+  text-align: center;
+  padding-bottom: 20px;
+  color: #313c41; }
+
 p {
   margin-bottom: 1.5em; }
+
+a {
+  font-family: "Open Sans", sans-serif; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -805,5 +835,42 @@ object {
     opacity: 0.3; }
   .home .wedding-party-container .the-gents .wedding-party-subheading {
     padding-top: 50px; }
+
+.date-time {
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Open Sans", sans-serif; }
+  .date-time p {
+    padding-bottom: 10px;
+    margin-bottom: 0; }
+    .date-time p.wedding-date {
+      padding-bottom: 0px; }
+    .date-time p.wedding-time {
+      padding-bottom: 30px; }
+    .date-time p.wedding-venue {
+      font-style: italic; }
+
+.accommodations-repeater {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .accommodations-repeater .accommodation-detail {
+    -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%;
+    text-align: center;
+    margin-bottom: 30px; }
+  .accommodations-repeater .accommodation-site {
+    color: seashell;
+    background: #5d727b;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px; }
+    .accommodations-repeater .accommodation-site:hover {
+      background: #313c41; }
 
 /*# sourceMappingURL=../maps/style.css.map */

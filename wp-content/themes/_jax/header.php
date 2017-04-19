@@ -27,7 +27,7 @@
 		<header id="masthead" class="site-header" role="banner">
 			<div class="nav-name-container">	
 				<h1 class="nav-names">
-					<a href="<?php echo home_url(); ?>"> <?php the_field('hero_text'); ?></a>
+					<a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a>
 				</h1>
 
 				<!-- <h2 class="hero-subtext"> <?php the_field('hero_subtext'); ?> </h2> -->

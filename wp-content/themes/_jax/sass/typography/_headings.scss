@@ -8,3 +8,9 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	font-size: 60px;
 }
+
+.section-subheading {
+	text-align: center;
+	padding-bottom: 20px;
+	color: $text_accent;
+}

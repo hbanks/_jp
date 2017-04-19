@@ -13,3 +13,27 @@ h1, h2, h3, h4, h5, h6, ul, ol, li, div, a, p, span {
 	justify-content: space-between;
 	align-items: center;
 }
+
+.secondary-header {
+	padding: 250px;
+	background-size: cover;
+	background-position: center center;
+}
+
+.secondary-header-text {
+	color: $text_light;
+	font-size: 46px;
+	text-align: center;
+}
+
+.section-header {
+	padding: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.section-info {
+	padding: 60px;
+}
