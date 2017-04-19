@@ -48,7 +48,7 @@ get_header(); ?>
 						<h4 class="accommodation-name"><?php the_sub_field('accommodation_name') ?></h4>
 						<p class="accommodation-address"> <?php the_sub_field('accommodation_address') ?> </p>
 						<p class="accommodation-phone"> <?php the_sub_field('accommodation_phone') ?> </p>
-						<a href="<?php the_sub_field('accommodation_site') ?>" class="accommodation-site">View</a>
+						<a href="<?php the_sub_field('accommodation_site') ?>" target="_blank" class="accommodation-site">View</a>
 				</div>
 
 				<?php endwhile; ?>

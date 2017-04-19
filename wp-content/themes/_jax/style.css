@@ -863,14 +863,16 @@ object {
     text-align: center;
     margin-bottom: 30px; }
   .accommodations-repeater .accommodation-site {
-    color: seashell;
-    background: #5d727b;
-    padding: 10px;
-    border-radius: 8px;
+    padding: 8px 16px;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 13px; }
+    font-size: 14px;
+    border: 2px solid #313c41;
+    letter-spacing: 3px; }
     .accommodations-repeater .accommodation-site:hover {
+      color: seashell;
       background: #313c41; }
+    .accommodations-repeater .accommodation-site:visited {
+      color: #404040; }
 
 /*# sourceMappingURL=../maps/style.css.map */
