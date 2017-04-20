@@ -27,10 +27,14 @@
 		margin: 0;
 
 		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
+			// box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			// float: left;
+			display: flex;
+			flex-direction: column;
+			background: white;
 			position: absolute;
-			top: 1.5em;
+			// top: 1.5em;
+			top: 32px;
 			left: -999em;
 			z-index: 99999;
 

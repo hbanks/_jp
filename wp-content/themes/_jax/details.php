@@ -19,11 +19,11 @@ get_header(); ?>
 ?>
 
 <!-- wedding details section -->
-<section class="secondary-header when-when-header" style="background-image: url('<?php echo $headerImage ?>')">
-	<h2 class="secondary-header-text when-when-header-text"> <?php the_field('wedding_details_heading'); ?> </h2>
+<section class="secondary-header when-where-header" style="background-image: url('<?php echo $headerImage ?>')">
+	<!-- <h2 class="secondary-header-text when-when-header-text"> <?php the_field('wedding_details_heading'); ?> </h2> -->
 </section>
 
-<section id="the-details"  class="section-info when-when-details">
+<section id="the-details"  class="section-info when-where-details">
 	<h3 class="section-subheading when-when-subheading when-when-details-heading"> <?php the_field('wedding_details_subheading'); ?> </h3>
 
 	<div class="date-time">

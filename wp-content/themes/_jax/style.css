@@ -498,10 +498,13 @@ a {
     list-style: none;
     margin: 0; }
     .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      background: white;
       position: absolute;
-      top: 1.5em;
+      top: 32px;
       left: -999em;
       z-index: 99999; }
       .main-navigation ul ul ul {
@@ -850,6 +853,11 @@ object {
   .home .wedding-party-container .the-gents .wedding-party-subheading {
     padding-top: 50px; }
 
+.when-where-header {
+  height: calc(100% - 84px);
+  background-position: center 34%;
+  padding: 0; }
+
 .when-when-heading {
   font-size: 25px; }
 
@@ -916,5 +924,51 @@ object {
       background: #313c41; }
     .accommodations-repeater .accommodation-site:visited {
       color: #404040; }
+
+.what-to-do-header {
+  height: calc(100% - 84px);
+  background-position: center top;
+  padding: 0; }
+
+.what-to-do-subheading {
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 50px; }
+
+.activity-repeater {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .activity-repeater .activity-detail {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    text-align: center;
+    margin-bottom: 45px; }
+  .activity-repeater .activity-name {
+    font-size: 20px;
+    padding-bottom: 10px; }
+  .activity-repeater .activity-address {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 1.5em; }
+  .activity-repeater .activity-site {
+    padding: 8px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: 2px solid #313c41;
+    letter-spacing: 3px; }
+    .activity-repeater .activity-site:hover {
+      color: seashell;
+      background: #313c41; }
+    .activity-repeater .activity-site:visited {
+      color: #404040; }
+
+.rsvp-header {
+  height: calc(100% - 84px);
+  background-position: center 34%;
+  padding: 0; }
 
 /*# sourceMappingURL=../maps/style.css.map */
