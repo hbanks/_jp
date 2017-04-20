@@ -235,6 +235,13 @@ h1, h2, h3, h4, h5, h6, ul, ol, li, div, a, p, span {
 .section-info {
   padding: 60px; }
 
+.center-image-header {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+  .center-image-header h2 {
+    color: seashell; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -253,7 +260,8 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 3px; }
 
 h1 {
   font-size: 60px; }
@@ -262,6 +270,12 @@ h1 {
   text-align: center;
   padding-bottom: 20px;
   color: #313c41; }
+
+.secondary-header-text {
+  font-size: 40px; }
+
+a, p, span, li {
+  font-family: "Open Sans", sans-serif; }
 
 p {
   margin-bottom: 1.5em; }
@@ -836,6 +850,12 @@ object {
   .home .wedding-party-container .the-gents .wedding-party-subheading {
     padding-top: 50px; }
 
+.when-when-heading {
+  font-size: 25px; }
+
+.when-when-subheading {
+  font-size: 25px; }
+
 .date-time {
   margin: 0 auto;
   text-align: center;
@@ -847,8 +867,27 @@ object {
       padding-bottom: 0px; }
     .date-time p.wedding-time {
       padding-bottom: 30px; }
+      .date-time p.wedding-time span {
+        font-style: italic; }
     .date-time p.wedding-venue {
       font-style: italic; }
+
+.travel-details {
+  text-align: center; }
+  .travel-details .travel-types {
+    padding-bottom: 45px; }
+  .travel-details .travel-name, .travel-details .travel-subheading {
+    font-size: 20px;
+    padding-bottom: 20px; }
+  .travel-details .parking-info {
+    padding-bottom: 45px; }
+  .travel-details .travel-map {
+    padding-bottom: 45px; }
+
+.accommodations-header {
+  background-position: center 80%; }
+  .accommodations-header h2 {
+    color: #404040; }
 
 .accommodations-repeater {
   display: -ms-flexbox;
@@ -861,7 +900,10 @@ object {
     -ms-flex-preferred-size: 33.33%;
         flex-basis: 33.33%;
     text-align: center;
-    margin-bottom: 30px; }
+    margin-bottom: 45px; }
+  .accommodations-repeater .accommodation-name {
+    font-size: 20px;
+    padding-bottom: 10px; }
   .accommodations-repeater .accommodation-site {
     padding: 8px 16px;
     text-decoration: none;

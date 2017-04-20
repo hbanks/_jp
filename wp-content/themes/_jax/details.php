@@ -14,12 +14,13 @@ get_header(); ?>
 	//image variables
 	$headerImage = get_field('wedding_details_image');
 	$accommodationsImage = get_field('accommodations_image');
-	$travelImage = get_field('wedding_party_heading_image');
+	$travelImage = get_field('travel_image');
 	
 ?>
 
+<!-- wedding details section -->
 <section class="secondary-header when-when-header" style="background-image: url('<?php echo $headerImage ?>')">
-	<h2 class="secondary-header-text when-when-heading"> <?php the_field('wedding_details_heading'); ?> </h2>
+	<h2 class="secondary-header-text when-when-header-text"> <?php the_field('wedding_details_heading'); ?> </h2>
 </section>
 
 <section id="the-details"  class="section-info when-when-details">
@@ -27,13 +28,45 @@ get_header(); ?>
 
 	<div class="date-time">
 		<p class="wedding-date"><?php the_field('wedding_date'); ?> </p>
-		<p class="wedding-time"><?php the_field('wedding_time'); ?> </p>
+		<p class="wedding-time"><span>at</span> <?php the_field('wedding_time'); ?> </p>
 		<p class="wedding-venue"><?php the_field('wedding_venue'); ?> </p>
 		<p class="wedding-address"><?php the_field('venue_address'); ?> </p>
 	</div>
 </section>
 
-<section id="accommodations" class="section-header accommodations-header" style="background-image: url('<?php echo $accommodationsImage ?>')">
+<!-- transportation section -->
+<section id="travel" class="section-header center-image-header travel-header" style="background-image: url('<?php echo $travelImage ?>')">
+	<h2 class="when-when-heading travel-heading"> <?php the_field('travel_heading'); ?> </h2>
+</section>
+
+<section class="section-info travel-details">
+
+	<div class="directions">
+		<?php if( have_rows('travel_directions') ): ?>
+				<?php while( have_rows('travel_directions') ): the_row(); ?>
+
+				<div class="travel-types">
+						<h4 class="travel-name"><?php the_sub_field('directions_title') ?></h4>
+						<p class="travel-directions"> <?php the_sub_field('instructions') ?> </p>
+				</div>
+
+				<?php endwhile; ?>
+		<?php endif; ?>
+	</div>
+
+	<!-- parking section -->
+	<h3 class="when-when-subheading travel-subheading"> <?php the_field('parking_heading'); ?> </h3>
+
+	<p class="parking-info"><?php the_field('parking_info'); ?></p>
+
+	<div class="tavel-map">
+		<?php the_field('travel_map'); ?>
+	</div>
+
+</section>
+
+<!-- accommodations section -->
+<section id="accommodations" class="section-header center-image-header accommodations-header" style="background-image: url('<?php echo $accommodationsImage ?>')">
 	<h2 class="when-when-heading accommodation-heading"> <?php the_field('accommodations_heading'); ?> </h2>
 </section>
 

@@ -1,3 +1,11 @@
+.when-when-heading {
+	font-size: 25px;
+}
+
+.when-when-subheading {
+	font-size: 25px;
+}
+
 .date-time {
 	margin: 0 auto;
 	text-align: center;
@@ -11,6 +19,9 @@
 		}
 		&.wedding-time {
 			padding-bottom: 30px;
+			span {
+				font-style: italic;
+			}
 		}
 		&.wedding-venue {
 			font-style: italic;
@@ -18,14 +29,49 @@
 	}
 }
 
+.travel-details {
+	text-align: center;
+
+	.travel-types {
+		padding-bottom: 45px;
+	}
+
+	.travel-name, .travel-subheading {
+		font-size: 20px;
+		padding-bottom: 20px;
+	}
+
+	.parking-info {
+		padding-bottom: 45px;
+	}
+
+	.travel-map {
+		padding-bottom: 45px;
+	}
+}
+
+
+.accommodations-header {
+	background-position: center 80%;
+	h2 {
+		color: $color__text-main;
+	}
+}
+
 .accommodations-repeater {
 	display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+
   .accommodation-detail {
   	flex-basis: 33.33%;
   	text-align: center;
-  	margin-bottom: 30px;
+  	margin-bottom: 45px;
+  }
+  .accommodation-name {
+  	font-size: 20px;
+  	padding-bottom: 10px;
   }
   .accommodation-site {
     padding: 8px 16px;
