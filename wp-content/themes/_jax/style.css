@@ -971,4 +971,140 @@ object {
   background-position: center 34%;
   padding: 0; }
 
+.rsvp-form {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 0; }
+
+#rsvp {
+  margin-top: 20px; }
+  #rsvp .rsvpParagraph {
+    margin: 0;
+    font-style: italic;
+    padding-top: 15px; }
+    #rsvp .rsvpParagraph label {
+      width: 100%;
+      display: block;
+      padding-bottom: 5px; }
+    #rsvp .rsvpParagraph input[type=text] {
+      width: 50%;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      border-radius: 0;
+      text-align: center; }
+    #rsvp .rsvpParagraph input[type=submit] {
+      padding: 8px 16px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      border: 1px solid #313c41;
+      letter-spacing: 3px;
+      background: none;
+      margin-top: 15px; }
+      #rsvp .rsvpParagraph input[type=submit]:hover {
+        color: seashell;
+        background: #313c41; }
+      #rsvp .rsvpParagraph input[type=submit]:visited {
+        color: #404040; }
+
+#rsvpPlugin {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
+  #rsvpPlugin #rsvpForm p {
+    margin: 0; }
+  #rsvpPlugin #rsvpForm .rsvpBorderTop {
+    border: none;
+    margin-top: 30px; }
+  #rsvpPlugin #rsvpForm .rsvpFormField input[type=text] {
+    width: 50%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    text-align: center; }
+  #rsvpPlugin #rsvpForm .rsvpFormField label {
+    font-family: "Open Sans", sans-serif;
+    padding-left: 10px; }
+  #rsvpPlugin #rsvpForm .rsvpParagraph {
+    margin: 0;
+    font-style: italic; }
+    #rsvpPlugin #rsvpForm .rsvpParagraph label {
+      width: 100%;
+      display: block;
+      padding-bottom: 5px; }
+    #rsvpPlugin #rsvpForm .rsvpParagraph input[type=text] {
+      width: 50%;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      border-radius: 0;
+      text-align: center; }
+  #rsvpPlugin #rsvpForm .rsvpParagraph input[type=submit] {
+    padding: 8px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: 1px solid #313c41;
+    letter-spacing: 3px;
+    background: none; }
+    #rsvpPlugin #rsvpForm .rsvpParagraph input[type=submit]:hover {
+      color: seashell;
+      background: #313c41; }
+    #rsvpPlugin #rsvpForm .rsvpParagraph input[type=submit]:visited {
+      color: #404040; }
+  #rsvpPlugin #rsvpForm .rsvpCustomQuestions {
+    margin-top: 25px; }
+    #rsvpPlugin #rsvpForm .rsvpCustomQuestions .rsvpFormField {
+      padding: 20px 0;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-align: center;
+          align-items: center; }
+    #rsvpPlugin #rsvpForm .rsvpCustomQuestions .rsvpFormField:nth-child(3) p {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+      #rsvpPlugin #rsvpForm .rsvpCustomQuestions .rsvpFormField:nth-child(3) p label {
+        padding: 10px 30px 11px 15px; }
+  #rsvpPlugin #rsvpForm #additionalRsvpContainer #addRsvp:after {
+    content: '+';
+    font-size: 25px;
+    height: 20px;
+    width: 20px; }
+  #rsvpPlugin #rsvpForm #additionalRsvpContainer .rsvpAdditionalAttendee {
+    padding: 20px 0;
+    border: none; }
+    #rsvpPlugin #rsvpForm #additionalRsvpContainer .rsvpAdditionalAttendee .rsvpAdditionalAttendeeQuestions .rsvpFormField label {
+      width: 100%;
+      font-style: italic;
+      display: block; }
+    #rsvpPlugin #rsvpForm #additionalRsvpContainer .rsvpAdditionalAttendee .rsvpFormField {
+      padding: 15px 0;
+      text-align: center; }
+      #rsvpPlugin #rsvpForm #additionalRsvpContainer .rsvpAdditionalAttendee .rsvpFormField:nth-child(4) label {
+        display: inline-block;
+        width: auto;
+        padding: 10px 30px 11px 15px; }
+    #rsvpPlugin #rsvpForm #additionalRsvpContainer .rsvpAdditionalAttendee .rsvpCustomQuestions {
+      margin: 0; }
+    #rsvpPlugin #rsvpForm #additionalRsvpContainer .rsvpAdditionalAttendee p {
+      text-align: center; }
+    #rsvpPlugin #rsvpForm #additionalRsvpContainer .rsvpAdditionalAttendee button {
+      padding: 8px 16px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 12px;
+      border: 1px solid #313c41;
+      letter-spacing: 3px;
+      background: none; }
+      #rsvpPlugin #rsvpForm #additionalRsvpContainer .rsvpAdditionalAttendee button:hover {
+        color: seashell;
+        background: #313c41; }
+      #rsvpPlugin #rsvpForm #additionalRsvpContainer .rsvpAdditionalAttendee button:visited {
+        color: #404040; }
+
 /*# sourceMappingURL=../maps/style.css.map */
