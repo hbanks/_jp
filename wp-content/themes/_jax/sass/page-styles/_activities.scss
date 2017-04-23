@@ -48,3 +48,9 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+ 	.activity-repeater .activity-detail {
+ 		flex-basis: 100%;
+ 	}
+}

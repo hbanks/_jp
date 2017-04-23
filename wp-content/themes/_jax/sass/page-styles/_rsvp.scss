@@ -214,3 +214,23 @@
 		}
 	}
 }
+
+@media (max-width: 768px) {
+ 	#rsvp .rsvpParagraph input[type=text], #rsvpPlugin #rsvpForm .rsvpFormField input[type=text] {
+ 		width: 100%;
+ 	}
+}
+
+@media (max-width: 575px) {
+	.rsvp-header {
+		background-position: 75% 34%;
+	}
+
+	.rsvp-form {
+		width: 100%;
+	}
+
+	#rsvpPlugin #rsvpForm h3 {
+		padding: 0;
+	}
+}

@@ -26,19 +26,6 @@
 		background-position: center center;
 	}
 
-	// .text-overlay {
-	// 	height: 100%;
-	// 	display: flex;
-	// 	align-items: center;
-	// 	justify-content: center;
-	// 	background: rgba(255,245,238, 0.15);
-	// }
-
-	// .hero-text {
-	// 	color: $text_light;
-	// 	letter-spacing: 5px;
-	// }
-
 	//===================
 	// our story section
 	//===================
@@ -55,8 +42,6 @@
 
 	.our-story-desc {
 		padding: 0 0 0 40px;
-		font-family: $serif;
-		font-size: $body_font;
 	}
 
 	//=======================
@@ -125,5 +110,43 @@
 			}
 		}
 
+	}
+
+	@media (max-width: 768px) {
+	 	.our-story-container {
+	    flex-direction: column;
+	 	}
+
+	 	.our-story-img {
+	 		margin-bottom: 15px;
+	 	}
+
+	 	.our-story-desc {
+	 		padding: 0;
+	 	}
+
+	 	.section-repeater .accommodation-detail, .section-repeater .registry-detail  {
+	 		flex-basis: 100%;
+	 	}
+
+	 	.wedding-party-container .party-member {
+	    flex-direction: column;
+	    &:nth-child(2n) {
+	    	flex-direction: column;
+	    }
+	 	}
+
+	 	.wedding-party-container .party-member-img {
+	 		flex-basis: 100%;
+	 		width: 100%;
+	 		margin-bottom: 10px;
+	 	}
+
+	 	.wedding-party-container .party-member-intro {
+	 		padding: 0;
+	 	}
+	}
+
+	@media (max-width: 575px) {
 	}
 }

@@ -819,9 +819,7 @@ object {
       flex-basis: 50%; }
 
 .home .our-story-desc {
-  padding: 0 0 0 40px;
-  font-family: "Libre Baskerville", serif;
-  font-size: 14px; }
+  padding: 0 0 0 40px; }
 
 .home .wedding-party-heading-container {
   padding: 100px;
@@ -873,6 +871,31 @@ object {
     opacity: 0.3; }
   .home .wedding-party-container .the-gents .wedding-party-subheading {
     padding-top: 50px; }
+
+@media (max-width: 768px) {
+  .home .our-story-container {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .home .our-story-img {
+    margin-bottom: 15px; }
+  .home .our-story-desc {
+    padding: 0; }
+  .home .section-repeater .accommodation-detail, .home .section-repeater .registry-detail {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; }
+  .home .wedding-party-container .party-member {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    .home .wedding-party-container .party-member:nth-child(2n) {
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .home .wedding-party-container .party-member-img {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 100%;
+    margin-bottom: 10px; }
+  .home .wedding-party-container .party-member-intro {
+    padding: 0; } }
 
 .when-where-header {
   height: calc(100% - 84px);
@@ -1010,6 +1033,11 @@ object {
     .activity-repeater .activity-site:visited {
       color: #404040; }
 
+@media (max-width: 768px) {
+  .activity-repeater .activity-detail {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; } }
+
 .rsvp-header {
   height: calc(100% - 84px);
   background-position: center 34%;
@@ -1132,5 +1160,17 @@ object {
       margin: 0; }
     #rsvpPlugin #rsvpForm #additionalRsvpContainer .rsvpAdditionalAttendee p {
       text-align: center; }
+
+@media (max-width: 768px) {
+  #rsvp .rsvpParagraph input[type=text], #rsvpPlugin #rsvpForm .rsvpFormField input[type=text] {
+    width: 100%; } }
+
+@media (max-width: 575px) {
+  .rsvp-header {
+    background-position: 75% 34%; }
+  .rsvp-form {
+    width: 100%; }
+  #rsvpPlugin #rsvpForm h3 {
+    padding: 0; } }
 
 /*# sourceMappingURL=../maps/style.css.map */
