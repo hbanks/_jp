@@ -257,6 +257,10 @@ footer .portfolio-link {
   footer .portfolio-link:visited, footer .portfolio-link:focus, footer .portfolio-link:active {
     color: #737373; }
 
+@media (max-width: 768px) {
+  .section-header {
+    padding: 100px 5%; } }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -914,33 +918,56 @@ object {
   .accommodations-header h2 {
     color: #404040; }
 
-.accommodations-repeater {
+.accommodation-subheading {
+  font-size: 16px;
+  padding-bottom: 25px;
+  text-align: center;
+  text-transform: initial; }
+
+.section-repeater {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: justify;
       justify-content: space-between; }
-  .accommodations-repeater .accommodation-detail {
-    -ms-flex-preferred-size: 33.33%;
-        flex-basis: 33.33%;
-    text-align: center;
-    margin-bottom: 45px; }
-  .accommodations-repeater .accommodation-name {
+  .section-repeater .section-name {
     font-size: 20px;
     padding-bottom: 10px; }
-  .accommodations-repeater .accommodation-site {
+  .section-repeater .section-site-link {
     padding: 8px 16px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
     border: 2px solid #313c41;
     letter-spacing: 3px; }
-    .accommodations-repeater .accommodation-site:hover {
+    .section-repeater .section-site-link:hover {
       color: seashell;
       background: #313c41; }
-    .accommodations-repeater .accommodation-site:visited {
+    .section-repeater .section-site-link:visited {
       color: #404040; }
+
+.accommodations-repeater .accommodation-detail {
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+  text-align: center;
+  margin-bottom: 45px; }
+
+.registry-repeater .registry-detail {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-align: center;
+  margin-bottom: 45px; }
+
+@media (max-width: 768px) {
+  .accommodations-repeater .accommodation-detail {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; } }
+
+@media (max-width: 575px) {
+  .section-repeater .accommodation-detail, .section-repeater .registry-detail {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; } }
 
 .what-to-do-header {
   height: calc(100% - 84px);
