@@ -556,10 +556,6 @@ a {
 .main-navigation.toggled ul {
   display: block; }
 
-@media screen and (min-width: 37.5em) {
-  .menu-toggle {
-    display: none; } }
-
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
@@ -578,6 +574,57 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+.mobile-main-navigation {
+  display: none; }
+
+.menu-switch {
+  display: none;
+  border: none; }
+  .menu-switch:hover, .menu-switch:visited, .menu-switch:focus, .menu-switch:active {
+    border: none;
+    background: white;
+    color: #404040;
+    outline: none; }
+
+.mobile-main-navigation {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: white;
+  left: -100%;
+  transition: all 0.3s; }
+  .mobile-main-navigation .mobile-nav-name-container .nav-names {
+    padding: 20px 25px;
+    font-size: 2em; }
+  .mobile-main-navigation .mobile-nav-name-container .nav-names a {
+    color: #313c41;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-decoration: none; }
+  .mobile-main-navigation ul {
+    margin: 0;
+    padding: 0 20px; }
+  .mobile-main-navigation ul li {
+    list-style-type: none;
+    padding: 10px 0;
+    width: 100%; }
+    .mobile-main-navigation ul li a {
+      color: #404040;
+      text-decoration: none; }
+      .mobile-main-navigation ul li a:active, .mobile-main-navigation ul li a:visited, .mobile-main-navigation ul li a:focus {
+        color: #404040; }
+
+.mobile-main-navigation.mobile-slide-open {
+  left: 0; }
+
+@media (max-width: 768px) {
+  .menu-switch {
+    display: block;
+    border: none; }
+  .nav-name-container, .main-navigation {
+    display: none; } }
 
 /*--------------------------------------------------------------
 # Accessibility
