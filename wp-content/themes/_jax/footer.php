@@ -11,13 +11,13 @@
 
 ?>
 
-	</div><!-- #content -->
+	<!-- </div>#content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', '_jax' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', '_jax' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', '_jax' ), '_jax', '<a href="https://automattic.com/" rel="designer">Heather Banks</a>' ); ?>
+			<div class="container">
+				<p><span>&copy; Jacqueline & Mark <?php echo date('Y'); ?></span> | Made with <span class="heart">&#9829;</span> by <a href="http://heatherbanks.ca" class="portfolio-link">Heather Banks</a></p>
+			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

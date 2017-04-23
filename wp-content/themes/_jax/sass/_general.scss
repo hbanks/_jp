@@ -47,3 +47,26 @@ h1, h2, h3, h4, h5, h6, ul, ol, li, div, a, p, span {
 		color: $text_light;
 	}
 }
+
+
+footer {
+	p {
+		text-align: center;
+		font-size: 12px;
+	}
+
+	.heart {
+		color: #FFB6C1;
+	}
+
+	.portfolio-link {
+		text-decoration: none;
+		color: $color__text-main;
+		&:hover {
+			color: #FFB6C1;
+		}
+		&:visited, &:focus, &:active {
+			color: lighten($color__text-main, 20%);
+		}
+	}
+}

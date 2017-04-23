@@ -38,3 +38,13 @@ get_header(); ?>
     ?>
 	</div>
 </section>
+
+<?php
+/**
+ * The template for the RSVP page
+ *
+ *
+ * @package Jax_and_Mark
+ */
+
+get_footer(); ?>
