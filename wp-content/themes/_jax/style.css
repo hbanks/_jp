@@ -214,6 +214,7 @@ h1, h2, h3, h4, h5, h6, ul, ol, li, div, a, p, span {
       align-items: center; }
 
 .secondary-header {
+  height: calc(100% - 84px);
   padding: 250px;
   background-size: cover;
   background-position: center center; }
@@ -259,7 +260,9 @@ footer .portfolio-link {
 
 @media (max-width: 768px) {
   .section-header {
-    padding: 100px 5%; } }
+    padding: 100px 5%; }
+  .secondary-header {
+    height: calc(100% - 46px); } }
 
 /*--------------------------------------------------------------
 # Typography
@@ -850,9 +853,6 @@ object {
       align-items: center; }
 
 .home .hero-section {
-  height: calc(100% - 84px);
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: center center; }
 
 .home .our-story-img {
@@ -945,7 +945,6 @@ object {
     padding: 0; } }
 
 .when-where-header {
-  height: calc(100% - 84px);
   background-position: center 34%;
   padding: 0; }
 
@@ -1040,7 +1039,6 @@ object {
         flex-basis: 100%; } }
 
 .what-to-do-header {
-  height: calc(100% - 84px);
   background-position: center top;
   padding: 0; }
 
@@ -1086,7 +1084,6 @@ object {
         flex-basis: 100%; } }
 
 .rsvp-header {
-  height: calc(100% - 84px);
   background-position: center 34%;
   padding: 0; }
 

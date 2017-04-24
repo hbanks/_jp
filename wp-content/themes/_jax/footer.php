@@ -16,7 +16,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<div class="container">
-				<p><span>&copy; Jacqueline & Mark <?php echo date('Y'); ?></span> | Made with <span class="heart">&#9829;</span> by <a href="http://heatherbanks.ca" class="portfolio-link">Heather Banks</a></p>
+				<p><span>&copy; Jacqueline & Mark <?php echo date('Y'); ?></span> | Made with <span class="heart">&#9829;</span> by <a href="http://heatherbanks.ca" class="portfolio-link" target="_blank">Heather Banks</a></p>
 			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

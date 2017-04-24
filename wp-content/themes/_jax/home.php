@@ -18,7 +18,7 @@ get_header(); ?>
 	
 ?>
 
-<section id="home" class="hero-section" style="background-image: url('<?php echo $headerImage ?>')">
+<section id="home" class="secondary-header hero-section" style="background-image: url('<?php echo $headerImage ?>')">
 <!-- 	<div class="text-overlay">	
 		<div class="header-text-container">	
 			<h1 class="hero-text"> <?php the_field('hero_text'); ?> </h1>
