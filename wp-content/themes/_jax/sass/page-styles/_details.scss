@@ -63,11 +63,13 @@
 	}
 }
 
-.accommodation-subheading {
+.accommodation-subheading, .registry-subheading {
+	width: 75%;
 	font-size: 16px;
 	padding-bottom: 25px;
 	text-align: center;
 	text-transform: initial; 
+	margin: 0 auto;
 }
 
 .section-repeater {
@@ -87,12 +89,9 @@
   	font-size: 14px;
   	border: 2px solid $text_accent;
   	letter-spacing: 3px;
-  	&:hover {
+  	&:hover, &:active, &:focus {
   		color: $text_light;
   		background: $text_accent;
-  	}
-  	&:visited {
-  		color: $color__text-main;
   	}
   }
 }
@@ -116,6 +115,10 @@
 @media (max-width: 768px) {
  	.accommodations-repeater .accommodation-detail {
  		flex-basis: 50%;
+ 	}
+
+ 	.accommodation-subheading, .registry-subheading {
+ 		width: 100%;
  	}
 }
 

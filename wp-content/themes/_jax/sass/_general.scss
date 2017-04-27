@@ -14,11 +14,6 @@ h1, h2, h3, h4, h5, h6, ul, ol, li, div, a, p, span {
 	align-items: center;
 }
 
-
-.localtest {
-	color: orange;
-}
-
 .secondary-header {
 	height: calc(100% - 84px);
 	padding: 250px;
@@ -80,6 +75,11 @@ footer {
 @media (max-width: 768px) {
  	.section-header {
  		padding: 100px 5%;
+ 		text-align: center;
+ 	}
+
+ 	.section-wrapper, .section-info {
+ 		padding: 30px;
  	}
 
  	.secondary-header {

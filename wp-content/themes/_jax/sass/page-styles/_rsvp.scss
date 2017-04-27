@@ -40,12 +40,9 @@
 			letter-spacing: 3px;
 			background: none;
 			margin-top: 15px;
-			&:hover {
+			&:hover, &:focus, &:active {
 				color: $text_light;
 				background: $text_accent;
-			}
-			&:visited {
-				color: $color__text-main;
 			}
 		}
 	}
@@ -84,7 +81,6 @@
 		.rsvpFormField label {
 			font-family: $sans-serif;
 			padding-left: 10px;
-			// font-size: 12px;
 		}
 
 		.rsvpParagraph {
@@ -105,23 +101,6 @@
 			}
 		}
 
-		// .rsvpParagraph input[type=submit] {
-		// 	padding: 8px 16px;
-		// 	text-decoration: none;
-		// 	text-transform: uppercase;
-		// 	font-size: 14px;
-		// 	border: 1px solid $text_accent;
-		// 	letter-spacing: 3px;
-		// 	background: none;
-		// 	&:hover {
-		// 		color: $text_light;
-		// 		background: $text_accent;
-		// 	}
-		// 	&:visited {
-		// 		color: $color__text-main;
-		// 	}
-		// }
-
 		.rsvpCustomQuestions {
 			margin-top: 25px;
 
@@ -133,12 +112,10 @@
 			}
 
 			.rsvpFormField:nth-child(2) p {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-
 				input[type=radio]+label {
+					display: inline-block;
 					padding: 10px 30px 11px 15px;
+					width: auto;
 				}
 			}
 		}
@@ -156,7 +133,6 @@
 
 		#additionalRsvpContainer {
 			#addRsvp {
-				// height: 0;
 				&:after {
 					content: '+';
 					font-size: 25px;
@@ -187,28 +163,19 @@
 
 				.rsvpCustomQuestions {
 					margin: 0;
+
+					.rsvpFormField:nth-child(2) p:nth-child(2) {
+						input[type=radio]+label {
+							display: inline-block;
+							padding: 10px 30px 11px 15px;
+							width: auto;
+						}
+					}
 				}
 
 				p {
 					text-align: center;
 				}
-
-				// button {
-				// 	padding: 8px 16px;
-				// 	text-decoration: none;
-				// 	text-transform: uppercase;
-				// 	font-size: 12px;
-				// 	border: 1px solid $text_accent;
-				// 	letter-spacing: 3px;
-				// 	background: none;
-				// 	&:hover {
-				// 		color: $text_light;
-				// 		background: $text_accent;
-				// 	}
-				// 	&:visited {
-				// 		color: $color__text-main;
-				// 	}
-				// }
 			}
 		}
 	}

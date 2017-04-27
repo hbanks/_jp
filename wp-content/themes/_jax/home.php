@@ -18,14 +18,8 @@ get_header(); ?>
 	
 ?>
 
-<section id="home" class="secondary-header hero-section" style="background-image: url('<?php echo $headerImage ?>')">
-<!-- 	<div class="text-overlay">	
-		<div class="header-text-container">	
-			<h1 class="hero-text"> <?php the_field('hero_text'); ?> </h1>
-
-			<h2 class="hero-subtext"> <?php the_field('hero_subtext'); ?> </h2>
-		</div>
-	</div> -->
+<section id="home" class="hero-section" style="background-image: url('<?php echo $headerImage ?>')">
+	<!-- <p class="test">hghggh</p> -->
 </section>
 
 <section id="our-story" class="our-story">
@@ -39,7 +33,7 @@ get_header(); ?>
 	</div>
 </section>
 
-<section class="wedding-party-heading-container" style="background-image: url('<?php echo $weddingPartyImage ?>')">
+<section class="section-header wedding-party-heading-container" style="background-image: url('<?php echo $weddingPartyImage ?>')">
 	<h2 class="wedding-party-heading"> <?php the_field('wedding_party_heading'); ?> </h2>
 </section>
 
@@ -58,7 +52,7 @@ get_header(); ?>
 			?>
 
 			<div class="party-member lady">
-  			<div class="party-member-img" style="background-image: url('<?php echo $partyMemberImage ?>')">
+  			<div class="party-member-img <?php echo $partyMemberName ?>" style="background-image: url('<?php echo $partyMemberImage ?>')">
 				</div>
 				<div class="party-member-intro">
 					<h4 class="party-member-name"><?php echo $partyMemberName ?></h4>

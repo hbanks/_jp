@@ -213,9 +213,6 @@ h1, h2, h3, h4, h5, h6, ul, ol, li, div, a, p, span {
   -ms-flex-align: center;
       align-items: center; }
 
-.localtest {
-  color: orange; }
-
 .secondary-header {
   height: calc(100% - 84px);
   padding: 250px;
@@ -263,7 +260,10 @@ footer .portfolio-link {
 
 @media (max-width: 768px) {
   .section-header {
-    padding: 100px 5%; }
+    padding: 100px 5%;
+    text-align: center; }
+  .section-wrapper, .section-info {
+    padding: 30px; }
   .secondary-header {
     height: calc(100% - 46px); } }
 
@@ -431,11 +431,6 @@ input[type="submit"] {
   input[type="submit"]:focus {
     color: seashell;
     background: #313c41; }
-  button:visited,
-  input[type="button"]:visited,
-  input[type="reset"]:visited,
-  input[type="submit"]:visited {
-    color: #404040; }
 
 input[type="text"],
 input[type="email"],
@@ -856,7 +851,10 @@ object {
       align-items: center; }
 
 .home .hero-section {
-  background-position: center center; }
+  background-position: center center;
+  box-sizing: border-box;
+  background-size: cover;
+  height: calc(100% - 84px); }
 
 .home .our-story-img {
   width: 450px;
@@ -872,7 +870,6 @@ object {
   padding: 0 0 0 40px; }
 
 .home .wedding-party-heading-container {
-  padding: 100px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -896,16 +893,22 @@ object {
     .home .wedding-party-container .party-member:nth-child(2n) {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse; }
+      .home .wedding-party-container .party-member:nth-child(2n) .party-member-intro {
+        padding: 0 35px 0 0; }
   .home .wedding-party-container .party-member-img {
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
     height: 200px;
     background-size: cover;
     background-position: center center; }
+    .home .wedding-party-container .party-member-img.Heather, .home .wedding-party-container .party-member-img.Peter {
+      background-position: center top; }
+    .home .wedding-party-container .party-member-img.Victoria {
+      background-position: center 30%; }
   .home .wedding-party-container .party-member-intro {
-    -ms-flex-preferred-size: 70%;
-        flex-basis: 70%;
-    padding: 0 35px; }
+    -ms-flex-preferred-size: 85%;
+        flex-basis: 85%;
+    padding: 0 0 0 35px; }
     .home .wedding-party-container .party-member-intro .party-member-name {
       padding-bottom: 15px;
       color: #313c41; }
@@ -923,11 +926,14 @@ object {
     padding-top: 50px; }
 
 @media (max-width: 768px) {
+  .home .section-wrapper {
+    padding: 30px; }
   .home .our-story-container {
     -ms-flex-direction: column;
         flex-direction: column; }
   .home .our-story-img {
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    width: 100%; }
   .home .our-story-desc {
     padding: 0; }
   .home .section-repeater .accommodation-detail, .home .section-repeater .registry-detail {
@@ -945,7 +951,13 @@ object {
     width: 100%;
     margin-bottom: 10px; }
   .home .wedding-party-container .party-member-intro {
-    padding: 0; } }
+    padding: 0; }
+  .home .wedding-party-container {
+    padding: 30px; } }
+
+@media (max-width: 500px) {
+  .home .hero-section {
+    background-position: 46% center; } }
 
 .when-where-header {
   background-position: center 34%;
@@ -990,11 +1002,13 @@ object {
   .accommodations-header h2 {
     color: #404040; }
 
-.accommodation-subheading {
+.accommodation-subheading, .registry-subheading {
+  width: 75%;
   font-size: 16px;
   padding-bottom: 25px;
   text-align: center;
-  text-transform: initial; }
+  text-transform: initial;
+  margin: 0 auto; }
 
 .section-repeater {
   display: -ms-flexbox;
@@ -1013,11 +1027,9 @@ object {
     font-size: 14px;
     border: 2px solid #313c41;
     letter-spacing: 3px; }
-    .section-repeater .section-site-link:hover {
+    .section-repeater .section-site-link:hover, .section-repeater .section-site-link:active, .section-repeater .section-site-link:focus {
       color: seashell;
       background: #313c41; }
-    .section-repeater .section-site-link:visited {
-      color: #404040; }
 
 .accommodations-repeater .accommodation-detail {
   -ms-flex-preferred-size: 33.33%;
@@ -1034,7 +1046,9 @@ object {
 @media (max-width: 768px) {
   .accommodations-repeater .accommodation-detail {
     -ms-flex-preferred-size: 50%;
-        flex-basis: 50%; } }
+        flex-basis: 50%; }
+  .accommodation-subheading, .registry-subheading {
+    width: 100%; } }
 
 @media (max-width: 575px) {
   .section-repeater .accommodation-detail, .section-repeater .registry-detail {
@@ -1121,11 +1135,9 @@ object {
       letter-spacing: 3px;
       background: none;
       margin-top: 15px; }
-      #rsvp .rsvpParagraph input[type=submit]:hover {
+      #rsvp .rsvpParagraph input[type=submit]:hover, #rsvp .rsvpParagraph input[type=submit]:focus, #rsvp .rsvpParagraph input[type=submit]:active {
         color: seashell;
         background: #313c41; }
-      #rsvp .rsvpParagraph input[type=submit]:visited {
-        color: #404040; }
 
 #rsvpPlugin {
   font-family: "Open Sans", sans-serif;
@@ -1169,15 +1181,10 @@ object {
           flex-direction: column;
       -ms-flex-align: center;
           align-items: center; }
-    #rsvpPlugin #rsvpForm .rsvpCustomQuestions .rsvpFormField:nth-child(2) p {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-align: center;
-          align-items: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-      #rsvpPlugin #rsvpForm .rsvpCustomQuestions .rsvpFormField:nth-child(2) p input[type=radio] + label {
-        padding: 10px 30px 11px 15px; }
+    #rsvpPlugin #rsvpForm .rsvpCustomQuestions .rsvpFormField:nth-child(2) p input[type=radio] + label {
+      display: inline-block;
+      padding: 10px 30px 11px 15px;
+      width: auto; }
   #rsvpPlugin #rsvpForm h3 {
     padding: 25px; }
   #rsvpPlugin #rsvpForm .rsvpAdditionalAttendee {
@@ -1205,6 +1212,10 @@ object {
         padding: 10px 30px 11px 15px; }
     #rsvpPlugin #rsvpForm #additionalRsvpContainer .rsvpAdditionalAttendee .rsvpCustomQuestions {
       margin: 0; }
+      #rsvpPlugin #rsvpForm #additionalRsvpContainer .rsvpAdditionalAttendee .rsvpCustomQuestions .rsvpFormField:nth-child(2) p:nth-child(2) input[type=radio] + label {
+        display: inline-block;
+        padding: 10px 30px 11px 15px;
+        width: auto; }
     #rsvpPlugin #rsvpForm #additionalRsvpContainer .rsvpAdditionalAttendee p {
       text-align: center; }
 
