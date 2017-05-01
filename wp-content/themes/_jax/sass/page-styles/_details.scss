@@ -79,7 +79,7 @@
 
   .section-name {
   	font-size: 20px;
-  	padding-bottom: 10px;
+  	padding-bottom: 15px;
   }
 
   .section-site-link {
@@ -89,6 +89,7 @@
   	font-size: 14px;
   	border: 2px solid $text_accent;
   	letter-spacing: 3px;
+  	display: inline-block;
   	&:hover, &:active, &:focus {
   		color: $text_light;
   		background: $text_accent;

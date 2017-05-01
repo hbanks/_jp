@@ -81,7 +81,7 @@ get_header(); ?>
 			?>
 
 			<div class="party-member gent">
-  			<div class="party-member-img" style="background-image: url('<?php echo $partyMemberImage ?>')">
+  			<div class="party-member-img <?php echo $partyMemberName ?>" style="background-image: url('<?php echo $partyMemberImage ?>')">
 				</div>
 				<div class="party-member-intro">
 					<h4 class="party-member-name"><?php echo $partyMemberName ?></h4>

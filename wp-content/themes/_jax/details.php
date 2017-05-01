@@ -104,7 +104,6 @@ get_header(); ?>
 
 				<div class="registry-detail">
 						<h4 class="section-name registry-location"><?php the_sub_field('registry_location') ?></h4>
-						<p class="registry-name"> Registry Number: <?php the_sub_field('registry_name') ?> </p>
 						<a href="<?php the_sub_field('registry_link') ?>" target="_blank" class="section-site-link registry-link">View</a>
 				</div>
 
