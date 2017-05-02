@@ -1043,6 +1043,9 @@ object {
   text-align: center;
   margin-bottom: 45px; }
 
+.registry-header {
+  background-position: center 30%; }
+
 @media (max-width: 768px) {
   .accommodations-repeater .accommodation-detail {
     -ms-flex-preferred-size: 50%;
@@ -1229,6 +1232,22 @@ object {
   .rsvp-form {
     width: 100%; }
   #rsvpPlugin #rsvpForm h3 {
-    padding: 0; } }
+    padding: 0; }
+  #rsvpPlugin #rsvpForm .rsvpCustomQuestions .rsvpFormField:nth-child(2) p input[type="radio"], #rsvpPlugin #rsvpForm .rsvpAdditionalAttendee .rsvpAdditionalAttendeeQuestions .rsvpFormField input[type="radio"] {
+    height: 25px;
+    width: 15px;
+    float: left; }
+  #rsvpPlugin #rsvpForm .rsvpCustomQuestions .rsvpFormField:nth-child(2) p input[type=radio] + label, #rsvpPlugin #rsvpForm .rsvpAdditionalAttendee .rsvpAdditionalAttendeeQuestions .rsvpFormField input[type="radio"] + label {
+    padding: 0 0 15px 30px;
+    display: block;
+    text-align: left; }
+  #rsvpPlugin #rsvpForm .rsvpAdditionalAttendee .rsvpAdditionalAttendeeQuestions .rsvpFormField:first-child p {
+    margin-bottom: 10px; }
+  #rsvpPlugin #rsvpForm .rsvpAdditionalAttendee .rsvpAdditionalAttendeeQuestions .rsvpFormField:first-child input[type="radio"] {
+    height: 25px;
+    width: 15px;
+    float: left;
+    margin-left: 100px;
+    margin-right: 12px; } }
 
 /*# sourceMappingURL=../maps/style.css.map */
